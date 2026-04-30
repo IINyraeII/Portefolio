@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlternanceHub IA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <header>
+    <h1>AlternanceHub IA</h1>
+    <p>Un assistant intelligent pour organiser ses recherches d’emploi.</p>
+  </header>
+
+  <main>
+
+    <section class="intro">
+      <h2>Pourquoi ce projet ?</h2>
+      <p>
+        Trouver une alternance demande de suivre beaucoup d’offres, de candidatures,
+        de relances et d’entretiens. J’ai imaginé AlternanceHub IA pour centraliser
+        toutes ces informations dans un seul outil simple et utile.
+      </p>
+    </section>
+
+    <section class="form-section">
+      <h2>Ajouter une candidature</h2>
+
+      <form id="applicationForm">
+        <input type="text" id="company" placeholder="Nom de l'entreprise" required />
+        <input type="text" id="position" placeholder="Poste recherché" required />
+        <input type="text" id="city" placeholder="Ville" required />
+        <input type="url" id="link" placeholder="Lien de l'offre" />
+
+        <select id="status">
+          <option value="À postuler">À postuler</option>
+          <option value="Envoyée">Envoyée</option>
+          <option value="À relancer">À relancer</option>
+          <option value="Entretien">Entretien</option>
+        </select>
+
+        <button type="submit">Ajouter</button>
+      </form>
+    </section>
+
+    <section class="dashboard">
+      <h2>Tableau de bord</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3 id="total">0</h3>
+          <p>Candidatures</p>
+        </div>
+
+        <div class="card">
+          <h3 id="relances">0</h3>
+          <p>À relancer</p>
+        </div>
+
+        <div class="card">
+          <h3 id="entretiens">0</h3>
+          <p>Entretiens</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="applications">
+      <h2>Mes candidatures</h2>
+      <div id="applicationList"></div>
+    </section>
+
+    <section class="ai-section">
+      <h2>Conseil IA</h2>
+      <p id="aiAdvice">
+        Clique sur le bouton pour obtenir un conseil personnalisé.
+      </p>
+      <button onclick="generateAdvice()">Générer un conseil IA</button>
+    </section>
+
+    <section class="about">
+      <h2>Ce que ce projet montre</h2>
+      <p>
+        Ce projet montre ma capacité à identifier un besoin concret, imaginer une solution digitale,
+        structurer une interface web et utiliser la logique pour créer un outil pratique.
+        À terme, j’aimerais connecter ce type d’outil à une vraie intelligence artificielle.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Projet réalisé par Crystal — Portfolio tech</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
