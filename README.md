@@ -21,7 +21,6 @@ Right now, I'm building projects to strengthen both my analytical and technical 
 * Business and sales analysis
 * Performance indicators and KPIs
 * Real-world business problems
-* Supply chain and operations
 * Projects combining business understanding and data analysis
 
 ## Main Project
